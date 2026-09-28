@@ -1,34 +1,47 @@
-# Cursor plugin template
+# DocChief for Cursor
 
-Build and publish Cursor Marketplace plugins from a single repo.
+<img src="plugins/docchief/assets/logo.svg" alt="DocChief" width="120">
 
-Two starter plugins are included:
+Skills for querying and reporting on corporate records health: get fundraising-ready as a
+founder, or run diligence on a target as an investor.
 
-- **starter-simple**: rules and skills only
-- **starter-advanced**: rules, skills, agents, commands, hooks, MCP, and scripts
+This repository holds the DocChief plugin for the Cursor Marketplace. It contains only the
+plugin manifest and the MCP configuration. The MCP server runs at
+`https://mcp.docchief.ai/mcp`, and no code from this repository runs on your machine.
 
-## Getting started
+See [plugins/docchief/README.md](plugins/docchief/README.md) for what the plugin does, the
+prerequisites, install steps and the tool list.
 
-[Use this template](https://github.com/cursor/plugin-template/generate) to create a new repository, then customize:
+## Layout
 
-1. `.cursor-plugin/marketplace.json`: set marketplace `name`, `owner`, and `metadata`.
-2. `plugins/*/.cursor-plugin/plugin.json`: set `name` (lowercase kebab-case), `displayName`, `author`, `description`, `keywords`, `license`, and `version`.
-3. Replace placeholder rules, skills, agents, commands, hooks, scripts, and logos.
+This repository follows the structure of
+[cursor/plugin-template](https://github.com/cursor/plugin-template):
 
-To add more plugins, see `docs/add-a-plugin.md`.
+| Path | Purpose |
+|------|---------|
+| `.cursor-plugin/marketplace.json` | Marketplace manifest. Lists the plugins in this repository. |
+| `plugins/docchief/.cursor-plugin/plugin.json` | Plugin manifest: name, description, author, license, logo. |
+| `plugins/docchief/mcp.json` | MCP server definition. Only the server URL, no credentials. |
+| `plugins/docchief/assets/logo.svg` | Logo shown in the marketplace. |
+| `scripts/validate-template.mjs` | The template's validator. |
 
-## Single plugin vs multi-plugin
+## Validate
 
-This template defaults to **multi-plugin** (multiple plugins in one repo).
+```bash
+node scripts/validate-template.mjs
+```
 
-For a **single plugin**, move your plugin folder contents to the repository root, keep one `.cursor-plugin/plugin.json`, and remove `.cursor-plugin/marketplace.json`.
+## Contributing
 
-## Submission checklist
+Pull requests can be opened by collaborators on this repository. Changes to `main` need
+approval from a code owner (see `.github/CODEOWNERS`).
 
-- Each plugin has a valid `.cursor-plugin/plugin.json`.
-- Plugin names are unique, lowercase, and kebab-case.
-- `.cursor-plugin/marketplace.json` entries map to real plugin folders.
-- All frontmatter metadata is present in rule, skill, agent, and command files.
-- Logos are committed and referenced with relative paths.
-- `node scripts/validate-template.mjs` passes.
-- Repository link is ready for submission to the Cursor team (Slack or `kniparko@anysphere.com`).
+## Support
+
+- Contact: [contact@docchief.ai](mailto:contact@docchief.ai)
+- Documentation: [docchief.ai/docs](https://docchief.ai/docs)
+- Privacy policy: [docchief.ai/privacy](https://docchief.ai/privacy)
+
+## License
+
+[MIT](LICENSE)

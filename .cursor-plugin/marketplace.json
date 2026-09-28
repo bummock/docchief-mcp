@@ -1,23 +1,18 @@
 {
-  "name": "cursor-plugin-starters",
+  "name": "docchief",
   "owner": {
-    "name": "Your Org",
-    "email": "plugins@example.com"
+    "name": "DocChief",
+    "email": "contact@docchief.ai"
   },
   "metadata": {
-    "description": "Starter marketplace template for Cursor plugins",
+    "description": "DocChief plugins for Cursor: query and report on the health of corporate records in DocChief datarooms.",
     "version": "0.1.0"
   },
   "plugins": [
     {
-      "name": "starter-simple",
-      "source": "./plugins/starter-simple",
-      "description": "Minimal plugin with rules and skills only"
-    },
-    {
-      "name": "starter-advanced",
-      "source": "./plugins/starter-advanced",
-      "description": "Full-featured plugin with rules, skills, agents, commands, hooks, and MCP"
+      "name": "docchief",
+      "source": "./plugins/docchief",
+      "description": "Skills for querying and reporting on corporate records health: get fundraising-ready as a founder, or run diligence on a target as an investor."
     }
   ]
 }
