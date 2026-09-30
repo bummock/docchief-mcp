@@ -13,6 +13,15 @@ runs on your machine.
 See [plugins/docchief/README.md](plugins/docchief/README.md) for what the plugin does, the
 prerequisites, install steps and the tool list.
 
+## Listings
+
+| Directory | Submission | Pinned commit |
+|-----------|------------|---------------|
+| xAI plugin marketplace (Grok Build) | [xai-org/plugin-marketplace#1013](https://github.com/xai-org/plugin-marketplace/pull/1013) | `a958270` |
+
+The xAI entry pins one commit of this repository. A change here does not reach Grok
+users until a new PR to `xai-org/plugin-marketplace` bumps the `sha` to a newer commit.
+
 ## Layout
 
 This repository follows the structure of
