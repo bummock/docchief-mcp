@@ -29,7 +29,13 @@ opens: a full dataroom for its owner or only the documents an invited member was
 
 Search for **DocChief** in the Cursor Marketplace and install the plugin.
 
-### By hand
+### From the xAI plugin marketplace (Grok Build)
+
+Search for **DocChief** in the Grok Build plugin marketplace and install the plugin. The
+Grok manifest is `.grok-plugin/plugin.json`. It declares the same server URL and no
+credentials.
+
+### By hand (Cursor)
 
 Add this to `~/.cursor/mcp.json` (all projects) or `.cursor/mcp.json` (one project):
 
