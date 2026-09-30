@@ -1,0 +1,22 @@
+{
+  "name": "docchief",
+  "displayName": "DocChief",
+  "version": "0.1.0",
+  "description": "Skills for querying and reporting on corporate records health: get fundraising-ready as a founder, or run diligence on a target as an investor.",
+  "author": {
+    "name": "DocChief",
+    "email": "contact@docchief.ai",
+    "url": "https://docchief.ai"
+  },
+  "homepage": "https://docchief.ai",
+  "repository": "https://github.com/bummock/docchief-mcp",
+  "license": "MIT",
+  "keywords": ["docchief", "dataroom", "due-diligence", "fundraising", "corporate-records", "cap-table", "mcp"],
+  "mcpServers": {
+    "docchief": {
+      "type": "http",
+      "url": "https://mcp.docchief.ai/mcp"
+    }
+  },
+  "logo": "./assets/logo.svg"
+}

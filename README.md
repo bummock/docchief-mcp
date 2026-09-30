@@ -1,13 +1,14 @@
-# DocChief for Cursor
+# DocChief MCP plugin
 
 <img src="plugins/docchief/assets/logo.svg" alt="DocChief" width="120">
 
 Skills for querying and reporting on corporate records health: get fundraising-ready as a
 founder, or run diligence on a target as an investor.
 
-This repository holds the DocChief plugin for the Cursor Marketplace. It contains only the
-plugin manifest and the MCP configuration. The MCP server runs at
-`https://mcp.docchief.ai/mcp`, and no code from this repository runs on your machine.
+This repository holds the DocChief plugin for the Cursor Marketplace and the xAI plugin
+marketplace (Grok Build). It contains only the plugin manifests and the MCP configuration.
+The MCP server runs at `https://mcp.docchief.ai/mcp`, and no code from this repository
+runs on your machine.
 
 See [plugins/docchief/README.md](plugins/docchief/README.md) for what the plugin does, the
 prerequisites, install steps and the tool list.
@@ -21,6 +22,7 @@ This repository follows the structure of
 |------|---------|
 | `.cursor-plugin/marketplace.json` | Marketplace manifest. Lists the plugins in this repository. |
 | `plugins/docchief/.cursor-plugin/plugin.json` | Plugin manifest: name, description, author, license, logo. |
+| `plugins/docchief/.grok-plugin/plugin.json` | Grok Build manifest. Declares the MCP server inline, URL only. |
 | `plugins/docchief/mcp.json` | MCP server definition. Only the server URL, no credentials. |
 | `plugins/docchief/assets/logo.svg` | Logo shown in the marketplace. |
 | `scripts/validate-template.mjs` | The template's validator. |
