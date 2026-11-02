@@ -70,7 +70,7 @@ To remove access, delete the `docchief` server in Cursor's MCP settings.
 | `search_documents` | Finds documents by type, party, role or event. |
 | `semantic_search` | Natural-language search over document text. Returns passages with page numbers. |
 | `get_document_summary` | Returns the short AI summary of one document. |
-| `get_document` | Returns everything the classifier extracted from one document. |
+| `get_document` | Returns the structured record of one document: its components, events, rights and review flags. It does not return the governing law, the agreement dates, the signature blocks or the parties of an agreement. |
 | `get_extracted_text` | Returns the extracted text of selected pages of one document. |
 | `get_document_view_link` | Returns a link that opens the document in the DocChief viewer. |
 | `list_space_parties` | Lists the people and companies named in a dataroom, with their roles. |
