@@ -70,11 +70,12 @@ To remove access, delete the `docchief` server in Cursor's MCP settings.
 | `search_documents` | Finds documents by type, party, role or event. |
 | `semantic_search` | Natural-language search over document text. Returns passages with page numbers. |
 | `get_document_summary` | Returns the short AI summary of one document. |
-| `get_document` | Returns the structured record of one document: its components, events, rights and review flags. It does not return the governing law, the agreement dates, the signature blocks or the parties of an agreement. |
+| `get_document` | Returns the structured record of one document: its components, events, rights and review flags. It does not return the governing law, the agreement dates, the signature blocks or the parties of an agreement. Use `list_space_contracts` for those. |
 | `get_extracted_text` | Returns the extracted text of selected pages of one document. |
 | `get_document_view_link` | Returns a link that opens the document in the DocChief viewer. |
 | `list_space_parties` | Lists the people and companies named in a dataroom, with their roles. |
 | `list_space_events` | Lists dated events such as issuances, appointments, grants and transfers. |
+| `list_space_contracts` | Lists the agreements in a dataroom, with the governing law, the dates, the parties, the signature blocks and a signature status. Filters by party, governing law, category, signature status and document. |
 | `list_space_relationships` | Lists relationships between parties, such as shareholdings and board seats. |
 | `list_watches` | Lists the health checks on a dataroom and whether each one has been generated. |
 | `get_watch_section` | Returns the Cap Table Health Check findings for one subject. |
