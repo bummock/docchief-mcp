@@ -75,7 +75,7 @@ To remove access, delete the `docchief` server in Cursor's MCP settings.
 | `get_document_view_link` | Returns a link that opens the document in the DocChief viewer. |
 | `list_space_parties` | Lists the people and companies named in a dataroom, with their roles. |
 | `list_space_events` | Lists dated events such as issuances, appointments, grants and transfers. |
-| `list_space_contracts` | Lists the agreements in a dataroom, with the governing law, the dates, the parties, the signature blocks and a signature status. Filters by party, governing law, category, signature status and document. |
+| `list_space_contracts` | Lists the agreements in a dataroom, with the governing law, the dates, how and when each agreement ends (the end date as the document gives it), whether that date has passed (calculated on each call), the parties, the signature blocks and a signature status. Filters by party, governing law, category, signature status, expiry status (for example, agreements that end within 90 days) and document. |
 | `list_space_relationships` | Lists relationships between parties, such as shareholdings and board seats. |
 | `list_watches` | Lists the health checks on a dataroom and whether each one has been generated. |
 | `get_watch_section` | Returns the Cap Table Health Check findings for one subject. |
