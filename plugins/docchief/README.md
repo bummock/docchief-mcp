@@ -79,6 +79,7 @@ To remove access, delete the `docchief` server in Cursor's MCP settings.
 | `list_space_relationships` | Lists relationships between parties, such as shareholdings and board seats. |
 | `list_watches` | Lists the health checks on a dataroom and whether each one has been generated. |
 | `get_watch_section` | Returns the Cap Table Health Check findings for one subject. |
+| `get_company_profile` | Returns what the company says about itself: stage, industry, where it is based, revenue, raising goals and founders. |
 | `get_docchief_updates` | Returns DocChief product news and tips. |
 | `send_feedback_to_docchief` | Sends your feedback or a bug report to the DocChief team. The agent calls it only when you ask. |
 
