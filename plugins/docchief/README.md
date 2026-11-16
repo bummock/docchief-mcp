@@ -67,10 +67,10 @@ To remove access, delete the `docchief` server in Cursor's MCP settings.
 |------|--------------|
 | `list_spaces` | Lists the datarooms you can read, with your role in each. |
 | `get_space_vocabulary` | Returns the filter values that exist in a dataroom: document categories, event types, party roles. |
-| `search_documents` | Finds documents by type, party, role or event. |
+| `search_documents` | Finds documents by type, party, role or event. Each review flag has `noted`, as in `get_document`. |
 | `semantic_search` | Natural-language search over document text. Returns passages with page numbers. |
 | `get_document_summary` | Returns the short AI summary of one document. |
-| `get_document` | Returns the structured record of one document: its components, events, rights and review flags. It does not return the governing law, the agreement dates, the signature blocks or the parties of an agreement. Use `list_space_contracts` for those. |
+| `get_document` | Returns the structured record of one document: its components, events, rights and review flags. A review flag with `noted: true` was examined by a member and is not an open issue. It does not return the governing law, the agreement dates, the signature blocks or the parties of an agreement. Use `list_space_contracts` for those. |
 | `get_extracted_text` | Returns the extracted text of selected pages of one document. |
 | `get_document_view_link` | Returns a link that opens the document in the DocChief viewer. |
 | `list_space_parties` | Lists the people and companies named in a dataroom, with their roles. |
